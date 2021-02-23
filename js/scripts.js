@@ -41,5 +41,6 @@ function poisson() {
     text.push("Final answer, when p[" + len + "] = " + p[len] + "<br>")
     var str = text + "";
     str = str.replace(/,/g, "")
+    console.log(str)
     document.getElementById("para").innerHTML = str;
 }
