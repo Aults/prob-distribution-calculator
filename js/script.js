@@ -14,7 +14,7 @@ function binomial() {
     var p = new Array();
     var text = [];
     p[0] = Math.pow((1-fp), fn);
-    text.push("p0 - " + p[0] + "<br>");
+    text.push("P[Y = 0] = " + p[0] + "<br>");
     for(var y = 1; y <= fn; y++) {
         p[y] = (fp/(1-fp))*((fn-(y-1))/(y))*p[y-1];
         text.push("p[Y = " + y + "] = " + p[y] + "<br>");
@@ -32,7 +32,7 @@ function poisson() {
     var p = new Array();
     var text = [];
     p[0] = Math.pow(Math.E, -lambda);
-    text.push("p0 - " + p[0] + "<br>");
+    text.push("P[Z = 0] = " + p[0] + "<br>");
     for(var z = 1; z <= fn; z++) {
         p[z] = (lambda)/(z)*p[z-1];
         text.push("p[Z = " + z + "] = " + p[z] + "<br>");
