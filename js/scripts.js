@@ -1,4 +1,3 @@
-
 function factorial(k) {
     if(k == 0) return 1;
     var sum = k--;
@@ -34,7 +33,7 @@ function poisson() {
     text.push("p0 - " + p[0] + "<br>");
     for(var z = 1; z <= fn; z++) {
         p[z] = (lambda)/(z)*p[z-1];
-        text.push("p[z] when lamda is " + lambda + " and z is " + z + " = " + p[z] + "<br>");
+        text.push("p[z] when lambda is " + lambda + " and z is " + z + " = " + p[z] + "<br>");
     } 
     var len = p.length-1
     text.push("Final answer, when p[" + len + "] is " + p[len] + "<br>")
