@@ -18,20 +18,33 @@
 <body>
   <div class = "center">
     <h1>Poisson</h1>
-    <label for="fz1">z: </label>
+    <img width="700" src="img/poisson.png">
+    <h1><br></h1>
+    <div class="stdWidth">
+      <label for="fz1">k+1</label>
+    </div>
     <input type="text" id="fz1" name="fz"><br><br>
-    <label for="lambda">lambda: </label>
+    <div class="stdWidth">
+      <label for="lambda">λ</label>
+    </div>
+
     <input type="text" id="lambda" name="lambda"><br><br>
     <button class="btn btn-success" onclick="poisson()">Calculate</button>
-    <p id="para">Nothing here yet</p>
+    <p id="para"></p>
 
     <h1>Binomial</h1>
-    <label for="fn2">n: </label>
+    <img width="700" src="img/binomial.png">
+    <h1><br></h1>
+    <div class="stdWidth">
+      <label for="fn2">n: </label>
+    </div>
     <input type="text" id="fn2" name="fn2"><br><br>
-    <label for="fp2">p: </label>
+    <div class="stdWidth">
+      <label for="fp2">p: </label>
+    </div>
     <input type="text" id="fp2" name="fp2"><br><br>
     <button class="btn btn-success" onclick="binomial()">Calculate</button>
-    <p id="para1">Nothing here yet</p>
+    <p id="para1"></p>
   </div>
 
     <script src="js/scripts.js"></script>
